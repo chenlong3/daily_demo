@@ -1,0 +1,37 @@
+.form-choose{
+
+}
+.form-choose label{
+    position: relative;
+}
+.form-choose input[type=checkbox]:before,input[type=radio]:before{
+    content:'';
+    display: inline-block;
+
+    position: absolute;
+    left:1px;
+    top:1px;
+
+    width: 16px;
+    height: 16px;
+    background: #3ec1d6;
+
+    font-weight: 900;
+    text-align: center;
+    line-height: 15px;
+    color:#fff;
+}
+.form-choose input[type=checkbox]:before{
+    border-radius: 3px;
+}
+.form-choose input[type=checkbox]:checked:before{
+    content:'\2713';
+    font-size: 15px;
+}
+.form-choose input[type=radio]:before{
+    border-radius: 50%;
+}
+.form-choose input[type=radio]:checked:before{
+    content:'\2022';
+    font-size: 24px;
+}
