@@ -1,0 +1,29 @@
+.pop-up{
+    position: relative;
+}
+.pop-up:before{
+    display: none;
+}
+.pop-up:hover::after{
+    content:'';
+    display: inline-block;
+    width: 0;
+    height: 0;
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid red;
+    position: absolute;
+    top:-14px;
+    left: 40px;
+}
+.pop-up:hover::before{
+    content: attr(data-pop);
+    display: inline-block;
+
+    background: #ccc;
+    position: absolute;
+    top: -53px;
+    left: 11px;
+
+}

@@ -12,26 +12,50 @@
     left:1px;
     top:1px;
 
-    width: 16px;
-    height: 16px;
-    background: #3ec1d6;
-
     font-weight: 900;
     text-align: center;
     line-height: 15px;
     color:#fff;
 }
 .form-choose input[type=checkbox]:before{
-    border-radius: 3px;
+    width: 30px;
+    height: 16px;
+    background: #ccc;
+}
+.form-choose input[type=checkbox]:before{
+    transition: background-color .5s;
+}
+.form-choose input[type=checkbox]:after{
+    content:'';
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+
+    transition: left .5s;
+
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    z-index: 2;
 }
 .form-choose input[type=checkbox]:checked:before{
-    content:'\2713';
-    font-size: 15px;
+    background: #adddab;
+}
+.form-choose input[type=checkbox]:checked:after{
+    background-color: #59b958;
+    left: 16px;
 }
 .form-choose input[type=radio]:before{
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
+
+    background-color: #ccc;
 }
 .form-choose input[type=radio]:checked:before{
     content:'\2022';
     font-size: 24px;
+    background-color: #59b958;
 }
