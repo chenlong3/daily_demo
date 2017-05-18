@@ -8,15 +8,15 @@
     <div>${1111|fn1:arg1:arg2····|fn2|fn3}</div>
 fn1、fn2等为filter函数使用如下方法定义
     filter.filter('toCase',function(str){
-    return str.toLocaleUpperCase()
+        return str.toLocaleUpperCase()
     })
 filter(key,fn(arg1,arg2···))
 key为过滤器名称
 arg1为原始数据
 arg2,arg3···为过滤器参数
     <div>${book|toCase}</div>
-    //等同于
-    <div>BOOK</div>
+        //等同于
+        <div>BOOK</div>
 
 原始数据也可为js变量，如：
     <div>${time|date}</div>
